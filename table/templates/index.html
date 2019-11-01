@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope='col'>#</th>
+          {%for key in users[0].keys()%}
+            <th scope='col'>{{key}}</th>
+          {%endfor%}
+        </tr>
+      </thead>
+      <tbody>
+        {%for user_index in range(0, 4)%}
+        <tr>
+          <th scope='row'>{{user_index +1}}</th>
+          {%for value in users[user_index].values()%}
+            <td>{{value}}</td>
+          {%endfor%}
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>
