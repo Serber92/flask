@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    {%for x in range(0, number)%}
+    <div id="checkLine">
+      <div id="checkboard">
+        <div class="red check"></div>
+        <div class="black check"></div>
+        <div class="black check"></div>
+        <div class="red check"></div>
+      </div>
+      <div id="checkboard">
+        <div class="red check"></div>
+        <div class="black check"></div>
+        <div class="black check"></div>
+        <div class="red check"></div>
+      </div>
+      <div id="checkboard">
+        <div class="red check"></div>
+        <div class="black check"></div>
+        <div class="black check"></div>
+        <div class="red check"></div>
+      </div>
+      <div id="checkboard">
+        <div class="red check"></div>
+        <div class="black check"></div>
+        <div class="black check"></div>
+        <div class="red check"></div>
+      </div>
+    </div>  
+    {%endfor%}
+  </body>
+</html>
