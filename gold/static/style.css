@@ -1,0 +1,25 @@
+h2{
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form{
+  display: inline-block;
+  margin: 10px;
+}
+
+button{
+  background-image: linear-gradient(to top,rgb(204, 204, 204), rgb(110, 110, 110));
+  border-radius: 8px;
+  box-shadow: 1px 3px 4px rgb(58, 57, 57);
+  color: rgb(42, 42, 42);
+}
+
+.earn{
+  color: green;
+}
+
+.lost{
+  color: red;
+}
+
